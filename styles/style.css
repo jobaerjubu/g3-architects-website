@@ -10,9 +10,33 @@
 
 /* shard style */
 
+main{
+
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main > section{
+
+    margin-top: 100px;
+}
+
 .display-flex {
 
     display: flex;
+}
+
+.section-title{
+
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* text primary */
+
+.text-primary{
+
+    color: #FF900E;
 }
 
 /* dark 01 */
@@ -27,7 +51,7 @@
 /* dark 03 */
 .text-gray-03 {
 
-    color: #727272;
+    color:rgba(114, 114, 114, 1)
 }
 
 
@@ -106,14 +130,64 @@
     width: 100%;
 }
 
+/* team and features related style */
 
+.teams{
+
+    align-items: center;
+}
+
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+
+.our-features{
+
+    margin-left: 80px;
+    max-width: 530px;
+}
+
+
+#quick-list1{
+
+    font-weight: 500;
+}
 /* responsive media query */
 
-@media screen and (max-width:576){
+@media screen and (max-width:576px){
 
 
-    .navbar, nav-link{
+    .navbar, 
+    .teams,
+    .nav-link{
 
         flex-direction: column;
+    }
+
+    .team-image-container{
+
+         grid-template-columns:repeat(1,1fr)
+    }
+
+    .our-features{
+
+        margin-left: 20px;
+    }
+    
+}
+
+/* medium size device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+
+    .teams{
+
+        flex-direction: column;
+    }
+    .our-features{
+
+        margin: 50px auto;
     }
 }
