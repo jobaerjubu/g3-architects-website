@@ -181,7 +181,24 @@ main > section{
     font-size: 1.25rem;
    
 }
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -77px;
+}
+#experience-years{
 
+    font-size: 4rem;
+    font-weight: 700;
+}
+.features-architect img{
+
+    width: 100%;
+
+
+}
 /* some facts related style */
 
 .facts-container{
@@ -249,7 +266,8 @@ main > section{
 
 
     .navbar, 
-    .teams,
+    .features, 
+    .teams, 
     .nav-link
     {
 
@@ -276,6 +294,11 @@ main > section{
 
     .our-features{
 
+        margin-left: 20px;
+    }
+    #experience-badge{
+
+        margin-top: 20px;
         margin-left: 20px;
     }
     
